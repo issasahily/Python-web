@@ -4,7 +4,7 @@ import json
 from machinetranslation import english_tofrench,french_toenglish
 
 app = Flask("Web Translator")
-
+ #Flask is microweb frame work
 @app.route("/englishToFrench")
 def englishToFrench():
     textToTranslate = request.args.get('textToTranslate')
